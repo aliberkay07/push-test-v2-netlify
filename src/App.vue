@@ -40,7 +40,7 @@ export default {
     }
   },
   created() {
-    axios.get("http://localhost:3000").then(categoryList_response => {
+    axios.get("https://push-test-v1.herokuapp.com/").then(categoryList_response => {
       console.log('categoryList :>> ', categoryList_response);
       this.categoryList = categoryList_response.data.categoryList;
 
