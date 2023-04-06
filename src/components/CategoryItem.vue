@@ -25,7 +25,7 @@ export default {
         userVisibleOnly : true,
         applicationServerKey: "BAJofqCfr_ztf2ZXJYa7rz1XEjEirEKgP1dJ9Mln5PslYR-eJhnTLALWYaZyHrTMxTiYr7uakXQvZ-WxOr40Q2M"
       });
-      axios.post(`http://localhost:3000/subscribe/${this.category.id}`,{
+      axios.post(`https://push-test-v1.herokuapp.com/subscribe/${this.category.id}`,{
         subscriber : cliendId
       }).then((category_sub_response) => {
         console.log('category_sub_response :>>', category_sub_response);
